@@ -1,8 +1,8 @@
 **Usage Intructions:**
 
-## .env file
+## .env file : Put .env file at the root of frontend directory
 ```bash
-Put the .env file at project root . I have shared the .env file in email
+NEXT_PUBLIC_API_URL = http://localhost:4000
 ```
 
 ## Install dependencies
