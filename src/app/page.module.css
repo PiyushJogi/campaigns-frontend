@@ -1,21 +1,15 @@
 .main {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  height: 100vh;
+  text-align: center;
 }
 
 .description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .description a {
@@ -108,6 +102,36 @@
 .logo {
   position: relative;
 }
+
+
+.heading {
+  font-size: 2.5rem; /* 40px */
+  font-weight: bold;
+  margin-bottom: 1.5rem; /* 24px */
+  color: #333;
+}
+
+.link {
+  font-size: 1.5rem; /* 24px */
+  color: #0070f3;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #005bb5;
+}
+
+.link span {
+  margin-left: 0.5rem;
+  transition: margin-left 0.3s ease;
+}
+
+/* .link:hover span {
+  margin-left: 1rem;
+} */
+
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
